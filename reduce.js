@@ -5,7 +5,7 @@ let array = [
 ];
 
 let totalSurvival = array.reduce( (sum, object) => {
-    return sum = sum + object.chancesOfSurvival;
+    return sum + object.chancesOfSurvival;
 }, 0);
 
 console.log(totalSurvival);

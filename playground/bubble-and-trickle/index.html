@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Play ground</title>
+    <style>
+        div {
+            padding: 30px;
+            border: 1px solid red;
+            min-height: 25px;
+            min-width: 25px;
+        }
+    </style>
+</head>
+<body>
+Bubble up events :
+<div id="grand-parent-bubble" style="max-width: 200px; margin: 20px">
+    <div id="parent-bubble">
+        <div id="child-bubble">
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+Trickle/Capture down events :
+<div id="grand-parent-trickle" style="max-width: 200px; margin: 20px">
+    <div id="parent-trickle">
+        <div id="child-trickle">
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+Mixed events :
+<div id="grand-parent-mix" style="max-width: 200px; margin: 20px">
+    <div id="parent-mix">
+        <div id="child-mix">
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+Stop propagation :
+<div id="grand-parent-stop" style="max-width: 200px; margin: 20px">
+    <div id="parent-stop">
+        <div id="child-stop">
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
